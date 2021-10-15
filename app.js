@@ -11,6 +11,7 @@ container.on('message', function (context) {
 
 var counter = 0;
 
+/** 
 container.once('sendable', function (context) {
     function send() {
         if (context.sender.sendable()) {
@@ -26,6 +27,7 @@ container.once('sendable', function (context) {
     }
     send();
 });
+*/
 
 container.on('disconnected', function (context) {
     console.log('disconnected');
